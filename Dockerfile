@@ -4,7 +4,6 @@
 FROM alpine:latest
 
 LABEL maintainer="Kyle Manna <kyle@kylemanna.com>"
-
 # Testing: pamtester
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \
     apk add --update openvpn iptables bash easy-rsa openvpn-auth-pam google-authenticator pamtester libqrencode && \
